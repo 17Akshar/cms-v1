@@ -10,6 +10,7 @@ import { BillsComponent } from './client/history/bills/bills.component';
 import { TransactionComponent } from './client/history/transaction/transaction.component';
 import { FeedbackComponent } from './client/feeback/feedback/feedback.component';
 import { PopUpComponent } from './client/pop-up/pop-up.component';
+import { NavComponent } from './client/navbar/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PopUpComponent } from './client/pop-up/pop-up.component';
     BillsComponent,
     TransactionComponent,
     FeedbackComponent,
-    PopUpComponent
+    PopUpComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
