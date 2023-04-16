@@ -10,6 +10,7 @@ import { BillsComponent } from './client/history/bills/bills.component';
 import { TransactionComponent } from './client/history/transaction/transaction.component';
 import { FeedbackComponent } from './client/feeback/feedback/feedback.component';
 import { PopUpComponent } from './client/pop-up/pop-up.component';
+import { NavComponent } from './client/navbar/nav/nav.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     BillsComponent,
     TransactionComponent,
     FeedbackComponent,
-    PopUpComponent
+    PopUpComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
