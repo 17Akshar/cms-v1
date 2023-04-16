@@ -11,6 +11,10 @@ import { TransactionComponent } from './client/history/transaction/transaction.c
 import { FeedbackComponent } from './client/feeback/feedback/feedback.component';
 import { PopUpComponent } from './client/pop-up/pop-up.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,9 @@ import { PopUpComponent } from './client/pop-up/pop-up.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

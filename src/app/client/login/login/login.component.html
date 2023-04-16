@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="main">
+  <div class="sub-main">
+    <div class="title">
+      <span class="material-icons">restaurant</span>
+      <h1>SFIT CANTEEN</h1>
+    </div>
+    <div class="form">
+      <form #f="ngForm" (ngSubmit)="Login(f.value)">
+        <div class="input">
+          <div class="icon"><span class="material-icons">person</span></div>
+          <input type="text" placeholder="Username" name="uname" ngModel>
+        </div>
+        <div class="input">
+          <div class="icon"><span class="material-icons">lock</span></div>
+          <input type="password" placeholder="Password" name="passcode" ngModel>
+        </div>
+        <div class="btn">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

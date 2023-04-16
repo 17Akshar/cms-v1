@@ -70,6 +70,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 4200,
+            "host": "127.0.0.1"
+          },
           "configurations": {
             "production": {
               "browserTarget": "cms-v1:build:production"
