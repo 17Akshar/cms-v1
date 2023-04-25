@@ -47,32 +47,91 @@
     justify-content: flex-start;
     flex-direction: column;
 }
-.acc{
-    width: 100%;
-    height: 70px;
-}
-.list{
-    width: 100%;
-    height: 100%;
-    background-color: #FFBA08;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.list .tit h1{
-    font-size: 22px;
-    margin-left: 30px;
-    color: #03071E;
 
+.accordion .title
+{
+  width: 100%;
+  max-height: 70px ;
+  background-color: #FFBA08;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
 }
-.list .drop-icon{
-    margin-right: 28px;
-}.list .drop-icon .material-icons{
-    font-size: 30px;
-    color: #03071E;
+.accordion .title h1
+{
+  color: #03071E;
+  font-weight: bolder
+}
+.accordion .material-icons{
+  color: #03071E;
 }
 .sub-list{
-    width: 100%;
-    height: 40px;
-    background-color: black;
+  width: 100%;
+  height: 100%;
+  background-color:#03071E;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  overflow: auto;
+  transition: 1s ease-in;
+}
+.hide{
+  display: none;
+  transition: 1s ease-in;
+
+}
+.visi{
+  display: flex;
+  transition: 1s ease-in;
+
+}
+.card{
+  width: 98%;
+  height: 70px;
+  background-color: #212E77;
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card img{
+  height: 100%;
+  object-fit: contain;
+  box-shadow: 5px 0px 10px black;
+}
+.item-details{
+  width: 55%;
+  height: 100%;
+  // background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-details h4{
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+}
+.item-details p{
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #FFBA08;
+}
+.add-to-card-btn{
+  width: 15%;
+  height: 100%;
+  background-color: #D9D9D9;
+  box-shadow: -5px 0px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-to-card-btn .material-icons{
+  color: #E85D04;
 }
