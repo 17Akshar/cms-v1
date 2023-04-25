@@ -8,6 +8,7 @@
       <span class="material-icons">logout</span>
     </div>
   </div>
+<<<<<<< HEAD
   <div class="accordion w-full h-full">
     <!-- component -->
     <!-- This is an example component -->
@@ -178,5 +179,44 @@
         </div>
       </div>
     </div>
+=======
+  <div class=" accordion">
+      <div class="title"  (click)="Open(1)">
+        <h1>Fastfood</h1>
+        <span class="material-icons">keyboard_arrow_down</span>
+      </div>
+      <div class="sub-list" [ngClass]="IsOpen1 ? 'visi' : 'hide'" >
+        <div class="card">
+          <img src="../../../../assets/pizza.jpg" alt="">
+          <div class="item-details">
+            <h4>Pizza</h4>
+            <p>80/-</p>
+          </div>
+          <div class="add-to-card-btn">
+            <span class="material-icons">add_shopping_cart</span>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="title" (click)="Open(2)">
+        <h1>Beverages</h1>
+        <span class="material-icons">keyboard_arrow_down</span>
+      </div>
+      <div class="sub-list " [ngClass]="IsOpen2 ? 'visi' : 'hide'">
+
+      </div>
+
+
+      <div class="title" (click)="Open(3)">
+        <h1>Snacks</h1>
+        <span class="material-icons">keyboard_arrow_down</span>
+      </div>
+      <div class="sub-list " [ngClass]="IsOpen3 ? 'visi' : 'hide'">
+
+      </div>
+
+>>>>>>> b4b17bfb7013dc4e4e13763de4a2a4638900e603
   </div>
 </div>
