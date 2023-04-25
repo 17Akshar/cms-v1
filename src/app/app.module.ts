@@ -15,6 +15,7 @@ import { NavComponent } from './client/navbar/nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HistoryComponent } from './client/history/history/history.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TransactionComponent,
     FeedbackComponent,
     PopUpComponent,
-    NavComponent
+    NavComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
