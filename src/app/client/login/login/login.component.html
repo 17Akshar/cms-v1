@@ -8,14 +8,16 @@
       <form #f="ngForm" (ngSubmit)="Login(f.value)">
         <div class="input">
           <div class="icon"><span class="material-icons">person</span></div>
-          <input type="text" placeholder="Username" name="uname" ngModel>
+          <input type="text" minlength="6" required  #name="ngModel" placeholder="Username" name="uname" ngModel>
         </div>
+        <p *ngIf="name.untouched" class="text-red-100 mb-4 bg-red-500 p-2 text-center">Enter the username</p>
         <div class="input">
           <div class="icon"><span class="material-icons">lock</span></div>
-          <input type="password" placeholder="Password" name="passcode" ngModel>
+          <input type="password" required #pass="ngModel" placeholder="Password" name="passcode" ngModel>
         </div>
+        <p *ngIf="pass.untouched" class="text-red-100 mb-4 bg-red-500 p-2 text-center">Enter the password</p>
         <div class="btn">
-          <button type="submit">Login</button>
+          <button  type="submit">Login</button>
         </div>
       </form>
     </div>

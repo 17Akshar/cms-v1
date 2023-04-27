@@ -1,8 +1,9 @@
 <div class="main">
-  <div class="sub-main">
-    <app-feedback></app-feedback>
-  </div>
-  <div class="navbar">
-    <app-nav></app-nav>
-  </div>
+    <div class="sub-main">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="navbar">
+      <app-nav></app-nav>
+    </div>
+  <app-login (SendData)="GetData($event)"></app-login>
 </div>

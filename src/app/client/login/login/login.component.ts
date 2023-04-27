@@ -1,30 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-
+import { Router } from '@angular/router';
+import { LoginService } from 'src/app/services/login.service';
+import { Output ,EventEmitter} from '@angular/core';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  login:any = []
-  constructor(private http:HttpClient) { 
-    this.http.get("http://localhost:2000/login").subscribe((res:any)=>{
-      console.log(res)
-      res.forEach((ele:any)=>{
-        this.login.push(ele)
-      })      
-    })
-
-  }
-
+  constructor(private login:LoginService,private route:Router) {}
   ngOnInit(): void {
   }
+  response_data:any 
+  res:boolean = false;
   Login(data:any){
-    this.login.forEach((ele:any)=>{
-      if(ele.username==data.uname){
-        console.log(ele.username,data.uname)
-      }
-    })
+    console.log(data)
   }
 }
