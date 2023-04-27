@@ -16,6 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HistoryComponent } from './client/history/history/history.component';
+import { AddItemsComponent } from './dashboard/add-items/add-items.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { ShowUserComponent } from './dashboard/show-user/show-user.component';
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import { HistoryComponent } from './client/history/history/history.component';
     FeedbackComponent,
     PopUpComponent,
     NavComponent,
-    HistoryComponent
+    HistoryComponent,
+    AddItemsComponent,
+    DashboardComponent,
+    ShowUserComponent
   ],
   imports: [
     BrowserModule,
