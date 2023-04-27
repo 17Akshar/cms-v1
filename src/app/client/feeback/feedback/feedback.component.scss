@@ -1,0 +1,100 @@
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: #ffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.upper-bar{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+}
+.title{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.title h1{
+  font-size: 20px;
+  color: #E85D04;
+  margin-left: 30px;
+  font-weight: bold;
+}
+.title .material-icons{
+  font-size: 35px;
+  margin-left: 20px;
+  color: #E85D04;
+}
+.logout-btn{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout-btn .material-icons{
+  font-size: 25px;
+  color: #FFBA08;
+}
+.form{
+  width: 100%;
+  height: calc(100% - 80px);
+  background-color: white;
+}
+form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 30px;
+}
+input{
+  width: 80%;
+  height: 50px;
+  background-color: #FFBA08;
+  margin-top: 20px;
+  padding: 10px 30px;
+  color: #03071E;
+  border: none;
+  outline: none;
+}
+textarea{
+  margin-top: 20px;
+  background-color: #FFBA08;
+  padding:20px 20px;
+  color: #03071E;
+  border: none;
+  outline: none;
+
+}
+::placeholder{
+  color: #03071E;
+}
+input::focus{
+  border: none;
+  background-color: #E85D04;
+}
+textarea::focus{
+  border: none;
+  background-color: #E85D04;
+}
+button{
+  margin-top: 20px;
+  background-color: #03071E;
+  color: #FFBA08;
+  padding: 10px 120px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+button:hover{
+  background-color: #FFBA08;
+  color: #03071E;
+}

@@ -11,9 +11,10 @@ export class HomeComponent implements OnInit {
   IsOpen3:boolean = false
 
   constructor() { }
-
   ngOnInit(): void {
   }
+  
+
   Open(n:any){
     if(n==1){
       this.IsOpen1 =!this.IsOpen1

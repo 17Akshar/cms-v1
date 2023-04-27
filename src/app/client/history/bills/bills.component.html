@@ -1,1 +1,35 @@
-<p>bills works!</p>
+<div class="main">
+  <div class="upper-bar">
+    <div class="title">
+      <h1>Bills</h1>
+    </div>
+    <div class="logout-btn">
+      <span class="material-icons">logout</span>
+    </div>
+  </div>
+  <div class="bills">
+    <table class="min-w-full border-collapse block md:table">
+      <thead class="block md:table-header-group">
+        <tr class="border border-grey-500 md:border-none block md:table-row absolute -top-full md:top-auto -left-full md:left-auto  md:relative ">
+          <th class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">Date</th>
+          <th class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">Payment</th>
+          <th class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">Payment status</th>
+          <th class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">Order status</th>
+          <th class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="block md:table-row-group">
+        <tr class="bg-gray-50 border mb-2 border-grey-500 md:border-none block md:table-row">
+          <td class="p-2 md:border md:border-grey-500 text-left block font-bold text-lg md:table-cell"><span class="inline-block  text-md w-1/2 md:hidden font-light">Date</span>13-3-23</td>
+          <td class="p-2 md:border md:border-grey-500 text-left block font-bold text-amber-600 text-lg md:table-cell"><span class="inline-block text-gray-900 text-md w-1/2 md:hidden font-light">Payment</span>130/-</td>
+          <td class="p-2 md:border md:border-grey-500 text-left block font-bold text-green-600 text-lg md:table-cell"><span class="inline-block text-gray-900  text-md w-1/2 md:hidden font-light">Payment status</span>Done</td>
+          <td class="p-2 md:border md:border-grey-500 text-left block font-bold text-green-600 text-lg md:table-cell"><span class="inline-block text-md w-1/2 text-gray-900 md:hidden font-light">Order status</span>Received</td>
+          <td class="p-2 md:border md:border-grey-500 text-left block font-bold text-lg md:table-cell">
+            <span class="inline-block w-1/2 md:hidden font-light text-md">Actions</span>
+            <button class="bg-blue-950 text-amber-400 font-bold py-1 px-8">Bill</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
