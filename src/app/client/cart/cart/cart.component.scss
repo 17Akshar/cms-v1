@@ -1,6 +1,7 @@
 .main{
   height: 100%;
   width: 100%;
+  background-color: #ffff;
   background-color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -18,12 +19,11 @@
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  font-weight: bolder
 }
 .title h1{
   font-size: 20px;
   color: #E85D04;
-  margin-left: 30px;
-  font-weight: bold;
 }
 .title .material-icons{
   font-size: 35px;
@@ -45,6 +45,39 @@
   width: 100%;
   height: calc(100% - 150px);
 }
+// <<<<<<< HEAD
+// .bottom-layer{
+//   width: 100%;
+//   height: 70px;
+//   background-color: #03071E;
+//   border-top-left-radius: 40px;
+//   border-top-right-radius: 40px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+// .bottom-layer h2{
+//   font-size: 18px;
+//   margin-left: 30px;
+//   color: white;
+// }
+// .bottom-layer h2 span{
+//   color: #FFBA08;
+// }
+
+// button{
+//   background-color: #FFBA08;
+//   margin-right: 10px;
+//   padding:10px 30px;
+//   border-top-right-radius: 30px;
+//   font-weight: bolder;
+//   color: #03071E;
+// }
+// button:hover{
+//   color: #FFBA08;
+//   background-color: #03071E;
+//   border: 1px solid #FFBA08;
+// }
 .bottom-bar{
   width: 100%;
   height: 80px;
