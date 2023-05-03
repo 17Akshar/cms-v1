@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-user.component.scss']
 })
 export class ShowUserComponent implements OnInit {
-
-  constructor() { }
+  user_data:any = []
+  constructor(private http : HttpClient) { }
 
   ngOnInit(): void {
+    
   }
 
 }

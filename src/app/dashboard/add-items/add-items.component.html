@@ -1,9 +1,7 @@
 <div class="main">
   <div class="flex items-center  justify-center p-12">
-    <!-- Author: FormBold Team -->
-    <!-- Learn More: https://formbold.com -->
     <div class="mx-auto  w-full h-full ">
-      <form action="https://formbold.com/s/FORM_ID" method="POST">
+      <form #item="ngForm" (ngSubmit)="GetItems(item.value)">
           <div class="w-full  p-2 ">
             <div class="mb-5">
               <label
@@ -14,9 +12,10 @@
               </label>
               <input
                 type="text"
-                name="fName"
+                name="itemname"
                 id="fName"
                 placeholder="First Name"
+                ngModel
                 class="w-full  bg-white py-3 px-6 placeholder-blue-500 focus:placeholder-amber-900 font-medium text-blue-950 outline-none focus:bg-amber-500"
               />
             </div>
@@ -31,80 +30,41 @@
               </label>
               <input
                 type="text"
-                name="fName"
+                name="itemprice"
                 id="fName"
                 placeholder="Item Price"
+                ngModel
                 class="w-full  bg-white py-3 px-6 placeholder-blue-500 focus:placeholder-amber-900 font-medium text-blue-950 outline-none focus:bg-amber-500"
               />
             </div>
           </div>
-          <div class="w-full  p-2 ">
-            <div class="mb-5">
-              <label
+          <label
                 for="fName"
                 class="mb-3 block text-base font-medium text-amber-500"
               >
-                Image URL
+                Upload Item image
               </label>
-              <input
-                type="text"
-                name="fName"
-                id="fName"
-                placeholder="Image Url"
-                class="w-full  bg-white py-3 px-6 placeholder-blue-500 focus:placeholder-amber-900 font-medium text-blue-950 outline-none focus:bg-amber-500"
-              />
-            </div>
-          </div>
-
-
+          <input type="file" name="itemimg" class="bg-white p-2 mb-4" (change)="getImg($event)" >
 
         <div class="mb-5">
           <label class="mb-3 block font-medium text-amber-500">
-            Item Type
+            Item type
           </label>
           <div class="flex items-center space-x-6">
-            <div class="flex items-center">
-              <input
-                type="radio"
-                name="ff"
-                id="radioButton1"
-                class="h-5 w-5"
-              />
-              <label
-                for="radioButton1"
-                class="pl-3 text-base font-medium text-amber-300"
-              >
-                Fastfood
-              </label>
-            </div>
-            <div class="flex items-center">
-              <input
-                type="radio"
-                name="b"
-                id="radioButton2"
-                class="h-5 w-5"
-              />
-              <label
-                for="radioButton2"
-                class="pl-3 text-base font-medium text-amber-300"
-              >
-                Beverages
-              </label>
-            </div>
-            <div class="flex items-center">
-              <input
-                type="radio"
-                name="s"
-                id="radioButton3"
-                class="h-5 w-5"
-              />
-              <label
-                for="radioButton3"
-                class="pl-3 text-base font-medium text-amber-300"
-              >
-                Snacks
-              </label>
-            </div>
+            
+            <div>
+              <div class="relative inline-flex self-center">
+                <span class="material-icons text-white bg-blue-950 absolute top-0 right-0 m-2 pointer-events-none p-2">
+                  arrow_drop_down
+                  </span>
+                  <select name="itemtype" ngModel class="text-lg font-bold rounded  text-blue-950 h-14 w-60 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
+                      <option value="ff">Fastfood</option>
+                      <option value="b">Beverages</option>
+                      <option value="s">Snacks</option>
+                  </select>
+              </div>
+          </div>
+
           </div>
         </div>
 

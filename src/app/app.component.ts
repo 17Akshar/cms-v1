@@ -10,6 +10,7 @@ export class AppComponent{
   view:boolean = false;
   constructor(private login:LoginService){}
   GetData(data:any){
-    console.log("FROM APP COMPONENT : ",data)
+    this.view = data
+    console.log(data)
   }
 }

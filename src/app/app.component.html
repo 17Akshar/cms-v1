@@ -1,20 +1,15 @@
 <div class="main">
-<<<<<<< HEAD
-    <div class="sub-main">
-      <router-outlet></router-outlet>
-    </div>
-    <div class="navbar">
+    <!-- <div *ngIf="view" class="sub-main">
+      <app-main-page></app-main-page>
+      <!-- <router-outlet></router-outlet> -->
+   <!-- </div> -->
+    <!-- <div *ngIf="view" class="navbar">
       <app-nav></app-nav>
-    </div>
-  <app-login (SendData)="GetData($event)"></app-login>
+    </div> -->
+  <!-- <app-login *ngIf="!view" (SendData)="GetData($event)"></app-login> -->
+  <!-- <app-dashboard></app-dashboard> -->
+  <!-- <app-home></app-home> -->
+  <!-- <app-login></app-login> -->
+  <router-outlet></router-outlet>
 </div>
-=======
-  <!-- <div class="sub-main">
-    <router-outlet></router-outlet>
-  </div>
-  <div class="navbar">
-    <app-nav></app-nav>
-  </div> -->
-  <app-dashboard></app-dashboard>
-</div>
->>>>>>> 8c2942a42af7f75292d1a2184a9031b75169b554
+  

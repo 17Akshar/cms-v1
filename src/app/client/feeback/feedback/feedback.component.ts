@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LogoutService } from 'src/app/services/logout.service';
 
 @Component({
   selector: 'app-feedback',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedbackComponent implements OnInit {
 
-  constructor() { }
+  constructor(private log:LogoutService) { }
 
   ngOnInit(): void {
   }
-
+  logout(){
+    this.log.Logout();
+  }
 }

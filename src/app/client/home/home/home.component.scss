@@ -4,6 +4,7 @@
     background-color: #03071E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .upper-bar{
     width: 100%;
     height: 80px;
@@ -83,13 +84,14 @@
 .sub-list{
   width: 100%;
   height: 100%;
-  background-color:#03071E;
+  background-color:black;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: column;
+  // flex-direction: column;
   padding: 10px;
   overflow: auto;
+  flex-flow: row wrap;
   transition: 1s ease-in;
 }
 .hide{
@@ -103,7 +105,7 @@
 
 }
 .card{
-  width: 98%;
+  width: 100%;
   height: 70px;
   background-color: #212E77;
   margin-top: 10px;
@@ -112,10 +114,17 @@
   align-items: center;
   justify-content: flex-start;
 }
+.card .item-img{
+  width: 30%;
+  height: 100%;
+  background-color: #D9D9D9;
+  box-shadow: 5px 0px 10px black;
+
+}
 .card img{
   height: 100%;
-  object-fit: contain;
-  box-shadow: 5px 0px 10px black;
+  width: 100%;
+  object-fit: cover;
 }
 .item-details{
   width: 55%;
@@ -123,19 +132,19 @@
   // background-color: red;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .item-details h4{
-  font-size: 20px;
-  margin-left: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
+  text-align: start;
 }
 .item-details p{
-  margin-right: 30px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bolder;
   color: #FFBA08;
+  text-align: end;
 }
 .add-to-card-btn{
   width: 15%;

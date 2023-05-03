@@ -19,6 +19,7 @@ import { HistoryComponent } from './client/history/history/history.component';
 import { AddItemsComponent } from './dashboard/add-items/add-items.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { ShowUserComponent } from './dashboard/show-user/show-user.component';
+import { MainPageComponent } from './client/main-page/main-page.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ShowUserComponent } from './dashboard/show-user/show-user.component';
     HistoryComponent,
     AddItemsComponent,
     DashboardComponent,
-    ShowUserComponent
+    ShowUserComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

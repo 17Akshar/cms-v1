@@ -1,50 +1,74 @@
 <div class="main">
-  <div class="upper-bar">
-    <div class="title">
-      <span class="material-icons">restaurant</span>
-      <h1>SFIT CANTEEN</h1>
-    </div>
-    <div class="logout-btn">
-      <span class="material-icons">logout</span>
-    </div>
-  </div>
-
-  <div class=" accordion">
-      <div class="title"  (click)="Open(1)">
-        <h1>Fastfood</h1>
-        <span class="material-icons">keyboard_arrow_down</span>
+  
+    <div class="upper-bar">
+      <div class="title">
+        <span class="material-icons">restaurant</span>
+        <h1>SFIT CANTEEN</h1>
       </div>
-      <div class="sub-list" [ngClass]="IsOpen1 ? 'visi' : 'hide'" >
-        <div class="card">
-          <img src="../../../../assets/pizza.jpg" alt="">
-          <div class="item-details">
-            <h4>Pizza</h4>
-            <p>80/-</p>
-          </div>
-          <div class="add-to-card-btn">
-            <span class="material-icons">add_shopping_cart</span>
+      <div class="logout-btn" (click)="logout()">
+        <span class="material-icons">logout</span>
+      </div>
+    </div>
+  
+    <div class=" accordion">
+        <div class="title"  (click)="Open(1)">
+          <h1>Fastfood</h1>
+          <span class="material-icons">keyboard_arrow_down</span>
+        </div>
+        <div class="sub-list" [ngClass]="IsOpen1 ? 'visi' : 'hide'" >
+          <div *ngFor = "let f of fastfood" class="card">
+            <div class="item-img">
+              <img [src]="f.item_img" >
+            </div>
+            <div class="item-details">
+              <h4>{{f.item_name}}</h4>
+              <p>{{f.item_price}}/-</p>
+            </div>
+            <div class="add-to-card-btn">
+              <span class="material-icons">add_shopping_cart</span>
+            </div>
           </div>
         </div>
-
-
-      </div>
-
-      <div class="title" (click)="Open(2)">
-        <h1>Beverages</h1>
-        <span class="material-icons">keyboard_arrow_down</span>
-      </div>
-      <div class="sub-list " [ngClass]="IsOpen2 ? 'visi' : 'hide'">
-
-      </div>
-
-
-      <div class="title" (click)="Open(3)">
-        <h1>Snacks</h1>
-        <span class="material-icons">keyboard_arrow_down</span>
-      </div>
-      <div class="sub-list " [ngClass]="IsOpen3 ? 'visi' : 'hide'">
-
-      </div>
-
-  </div>
+  
+        <div class="title" (click)="Open(2)">
+          <h1>Beverages</h1>
+          <span class="material-icons">keyboard_arrow_down</span>
+        </div>
+        <div class="sub-list"  [ngClass]="IsOpen2 ? 'visi' : 'hide'">
+          <div *ngFor = "let b of beverages" class="card">
+            <div class="item-img">
+              <img [src]="b.item_img" >
+            </div>
+            <div class="item-details">
+              <h4>{{b.item_name}}</h4>
+              <p>{{b.item_price}}/-</p>
+            </div>
+            <div class="add-to-card-btn">
+              <span class="material-icons">add_shopping_cart</span>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="title" (click)="Open(3)">
+          <h1>Snacks</h1>
+          <span class="material-icons">keyboard_arrow_down</span>
+        </div>
+        <div class="sub-list " [ngClass]="IsOpen3 ? 'visi' : 'hide'">
+          <div *ngFor = "let s of snacks" class="card">
+            <div class="item-img">
+              <img [src]="s.item_img" >
+            </div>
+            <div class="item-details">
+              <h4>{{s.item_name}}</h4>
+              <p>{{s.item_price}}/-</p>
+            </div>
+            <div class="add-to-card-btn">
+              <span class="material-icons">add_shopping_cart</span>
+            </div>
+          </div>
+        </div>
+  
+    </div>
+ 
 </div>
