@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,7 +11,10 @@ export class ShowUserComponent implements OnInit {
   constructor(private http : HttpClient) { }
 
   ngOnInit(): void {
-    
+    this.http.get('http://localhost:2000/login').subscribe((res:any)=>{
+      console.log(res.result)
+      this.user_data = res.result
+    })
   }
 
 }
